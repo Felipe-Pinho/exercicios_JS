@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bebedeira</title>
+</head>
+
+<body>
+
+    <script>
+        function Bebedeira(idade, idadeBeber) {
+            if (idade >= idadeBeber) {
+                return "Você pode beber"
+            } else {
+                return "Você não pode beber"
+            }
+        }
+        var idade = prompt("Qual a sua idade? ")
+        var idadeBeber = prompt("Com quantos anos é permitido beber no seu país?")
+        console.log(Bebedeira(idade, idadeBeber))
+    </script>
+
+</body>
+
+</html>

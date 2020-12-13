@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semáfaro</title>
+</head>
+
+<body>
+    <script>
+        function semafaro(cor) {
+            if (cor != "verde" && cor != "amarelo" && cor != "vermelho") {
+                return "Use cores que estão em semáfaros"
+            } else if (cor == "verde") {
+                return "Pode passar"
+            } else if (cor == "amarelo") {
+                return "Melhor freiar"
+            } else if (cor == "vermelho") {
+                return "Pare já"
+            }
+        }
+        var cor = prompt("Cor do semafaro").toLocaleLowerCase()
+        console.log(semafaro(cor))
+    </script>
+
+</body>
+
+</html>
