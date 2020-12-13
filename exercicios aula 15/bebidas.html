@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bebidas</title>
+</head>
+
+<body>
+    <script>
+        function exibeMenuBebidas() {
+            console.log("Escolha a bebida\n 1 - Refrigerante\n 2 - Suco\n 3 - Água")
+        }
+
+        function bebida(numBebida) {
+            if (numBebida == 1) {
+                return "Refrigerante"
+            } else if (numBebida == 2) {
+                return "Suco"
+            } else if (numBebida == 3) {
+                return "Água"
+            } else {
+                return "Pedido inválido"
+            }
+        }
+
+        exibeMenuBebidas()
+        var numBebida = prompt("Escolha o número da sua bebida: ")
+
+        console.log(bebida(numBebida))
+    </script>
+
+</body>
+
+</html>
